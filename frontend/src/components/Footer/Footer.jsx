@@ -27,7 +27,7 @@ const Footer = () => {
             <div className="footer-content-right">
                 <h2>Get In Touch</h2>
                 <ul>
-                    <li>+919857548343</li>
+                    <li>65656 87878</li>
                     <li>contact@mealmatrix.com</li>
                 </ul>
             </div>
