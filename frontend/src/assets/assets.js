@@ -121,7 +121,7 @@ export const food_list = [
         _id: "1",
         name: "Garden salad",
         image: food_1,
-        price: 12,
+        price: 120,
         description: "Fresh, crunchy greens tossed with a light dressing for a healthy, refreshing bite.",
         category: "Salad"
     },
@@ -129,77 +129,77 @@ export const food_list = [
         _id: "2",
         name: "Tofu & Asian Sesame salad",
         image: food_2,
-        price: 18,
+        price: 160,
         description: "Soft tofu, crisp veggies, and nutty sesame dressing for an Asian-inspired delight.",
         category: "Salad"
     }, {
         _id: "3",
         name: "Faro & Spinach Salad",
         image: food_3,
-        price: 16,
+        price: 150,
         description: "Hearty farro grains with tender spinach and zesty herbs for a wholesome meal.",
         category: "Salad"
     }, {
         _id: "4",
         name: "Strawberry Spinach Salad",
         image: food_4,
-        price: 24,
+        price: 180,
         description: "Sweet strawberries and fresh spinach drizzled with tangy balsamic glaze.",
         category: "Salad"
     }, {
         _id: "5",
         name: "Veggie Spring Rolls",
         image: food_5,
-        price: 14,
+        price: 110,
         description: "Crispy rolls packed with fresh vegetables and served with a savoury dip.",
         category: "Rolls"
     }, {
         _id: "6",
         name: "BBQ Pulled Pork Roll",
         image: food_6,
-        price: 12,
+        price: 160,
         description: "Tender pulled pork smothered in smoky BBQ sauce, wrapped to perfection.",
         category: "Rolls"
     }, {
         _id: "7",
         name: "Burrito",
         image: food_7,
-        price: 20,
+        price: 180,
         description: "A hearty Mexican roll loaded with rice, beans, veggies, and bold flavours.",
         category: "Rolls"
     }, {
         _id: "8",
         name: "Cinnamon Roll",
         image: food_8,
-        price: 15,
+        price: 140,
         description: "Soft, sweet pastry swirled with cinnamon and topped with creamy icing.",
         category: "Rolls"
     }, {
         _id: "9",
         name: "Classic Gelato",
         image: food_9,
-        price: 14,
+        price: 150,
         description: "Smooth, creamy Italian gelato for a rich and indulgent treat.",
         category: "Deserts"
     }, {
         _id: "10",
         name: "Classic Sorbet",
         image: food_10,
-        price: 22,
+        price: 170,
         description: "Light, fruity, and refreshingly cool – the perfect palate cleanser.",
         category: "Deserts"
     }, {
         _id: "11",
         name: "Churros",
         image: food_11,
-        price: 10,
+        price: 130,
         description: "Golden-fried dough sticks coated in cinnamon sugar, served with chocolate dip.",
         category: "Deserts"
     }, {
         _id: "12",
         name: "Gulab Jamun",
         image: food_12,
-        price: 12,
+        price: 100,
         description: "Soft, syrup-soaked dumplings that melt in your mouth with every bite.",
         category: "Deserts"
     },
@@ -207,7 +207,7 @@ export const food_list = [
         _id: "13",
         name: "Grilled Cheese Sandwich",
         image: food_13,
-        price: 12,
+        price: 120,
         description: "Gooey melted cheese grilled between golden, buttery bread slices.",
         category: "Sandwich"
     },
@@ -215,77 +215,77 @@ export const food_list = [
         _id: "14",
         name: "Tomato Onion Sandwich",
         image: food_14,
-        price: 18,
+        price: 100,
         description: "Juicy tomatoes and fresh onions layered with flavourful seasoning.",
         category: "Sandwich"
     }, {
         _id: "15",
         name: "Panner Tikka Sandwich",
         image: food_15,
-        price: 16,
+        price: 140,
         description: "Spicy paneer tikka stuffed in fresh bread for a smoky, tangy bite.",
         category: "Sandwich"
     }, {
         _id: "16",
         name: "Classic Club Sandwich",
         image: food_16,
-        price: 24,
+        price: 160,
         description: "Triple-layered goodness with fresh veggies, cheese, and sauces.",
         category: "Sandwich"
     }, {
         _id: "17",
         name: "Red Velvet Cake",
         image: food_17,
-        price: 14,
+        price: 180,
         description: "Moist red velvet layers topped with smooth cream cheese frosting.",
         category: "Cake"
     }, {
         _id: "18",
         name: "Choco Lava Cake",
         image: food_18,
-        price: 12,
+        price: 160,
         description: "Rich chocolate cake with a warm, molten chocolate centre.",
         category: "Cake"
     }, {
         _id: "19",
         name: "Pineapple Cake",
         image: food_19,
-        price: 20,
+        price: 170,
         description: "Light, fluffy cake layered with sweet pineapple cream.",
         category: "Cake"
     }, {
         _id: "20",
         name: "Chocolate Truffle Cake",
         image: food_20,
-        price: 15,
+        price: 200,
         description: "Decadent chocolate cake with rich, velvety truffle frosting.",
         category: "Cake"
     }, {
         _id: "21",
         name: "Panner Butter Masala with Naan",
         image: food_21,
-        price: 14,
+        price: 220,
         description: "Creamy paneer curry paired with soft, buttery naan.",
         category: "Pure Veg"
     }, {
         _id: "22",
         name: "Veg Biryani with Raita",
         image: food_22,
-        price: 22,
+        price: 200,
         description: "Aromatic rice cooked with spices and veggies, served with cool raita.",
         category: "Pure Veg"
     }, {
         _id: "23",
         name: "Veg Lasagna",
         image: food_23,
-        price: 10,
+        price: 240,
         description: "Layers of pasta, veggies, and cheese baked to golden perfection.",
         category: "Pure Veg"
     }, {
         _id: "24",
         name: "Masala Dosa",
         image: food_24,
-        price: 12,
+        price: 120,
         description: "Crispy South Indian dosa stuffed with spiced potato filling.",
         category: "Pure Veg"
     },
@@ -293,7 +293,7 @@ export const food_list = [
         _id: "25",
         name: "White Sauce Pasta",
         image: food_25,
-        price: 12,
+        price: 180,
         description: "Creamy, cheesy pasta with a rich white sauce and herbs.",
         category: "Pasta"
     },
@@ -301,51 +301,52 @@ export const food_list = [
         _id: "26",
         name: "Red Sauce Pasta",
         image: food_26,
-        price: 18,
+        price: 170,
         description: "Tangy tomato-based pasta with fresh herbs and a hint of spice.",
         category: "Pasta"
     }, {
         _id: "27",
         name: "Rigatoni Italian Pasta",
         image: food_27,
-        price: 16,
+        price: 200,
         description: "Tube-shaped pasta coated in savoury Italian sauce.",
         category: "Pasta"
     }, {
         _id: "28",
         name: "Chicken Pasta",
         image: food_28,
-        price: 24,
+        price: 220,
         description: "Tender chicken and pasta tossed in rich, flavour-packed sauce.",
         category: "Pasta"
     }, {
         _id: "29",
         name: "Classic Tomato Noodles",
         image: food_29,
-        price: 14,
+        price: 150,
         description: "Stir-fried noodles tossed with tangy tomato flavour.",
         category: "Noodles"
     }, {
         _id: "30",
         name: "Classic Ramen",
         image: food_30,
-        price: 12,
+        price: 180,
         description: "Comforting Japanese noodle soup with a savoury broth.",
         category: "Noodles"
     }, {
         _id: "31",
         name: "Zucchini Noodles (Zoodles)",
         image: food_31,
-        price: 20,
+        price: 200,
         description: "Light and healthy zucchini noodles tossed in fresh pesto.",
         category: "Noodles"
     }, {
         _id: "32",
         name: "Udon Noodles",
         image: food_32,
-        price: 15,
+        price: 190,
         description: "Thick, chewy Japanese noodles in a savoury, flavourful broth.",
         category: "Noodles"
     }
 ]
+
 
