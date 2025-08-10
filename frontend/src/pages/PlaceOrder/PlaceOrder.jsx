@@ -8,7 +8,8 @@ import { useNavigate } from 'react-router-dom'
 const PlaceOrder = () => {
   const navigate= useNavigate();
 
-  const { getTotalCartAmount, food_list, cartItems, url } = useContext(StoreContext);
+  const { getTotalCartAmount, token, food_list, cartItems, url } =
+    useContext(StoreContext);
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
@@ -43,26 +44,16 @@ const PlaceOrder = () => {
       amount: getTotalCartAmount() + 2,
     };
     
-    try {
-      let response = await axios.post(url+"/api/order/place", orderData);
-      if(response.data.success){
-        const {session_url} = response.data;
-        window.location.replace(session_url);
-      } else {
-        toast.error("Error placing order!");
-      }
-    } catch (error) {
-      toast.error("Error placing order!");
+    let response= await axios.post(url+"/api/order/place",orderData,{headers:{token}});
+    if(response.data.success){
+      const {session_url}=response.data;
+      window.location.replace(session_url);
+    }else{
+      toast.error("Errors!")
     }
   };
 
-  useEffect(()=>{
-    if(getTotalCartAmount()===0){
-      toast.error("Please Add Items to Cart");
-      navigate("/cart")
-    }
-  },[])
-
+ 
   return (
     <form className="place-order" onSubmit={placeOrder}>
       <div className="place-order-left">

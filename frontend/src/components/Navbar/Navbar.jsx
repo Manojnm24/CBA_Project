@@ -4,7 +4,7 @@ import {assets} from '../../assets/assets.js'
 import { Link } from 'react-router-dom';
 import { StoreContext } from '../../context/StoreContext';
 
-const Navbar = () => {
+const Navbar = ({setShowLogin}) => {
     const [menu, setMenu] = useState("menu");
     const {getTotalCartAmount} = useContext(StoreContext);
 
@@ -12,10 +12,10 @@ const Navbar = () => {
     <div className='navbar'>
       <Link to='/'><img src={assets.logo} alt='logo' className='logo'/></Link>
       <ul className='navbar-menu'>
-        <li onClick={()=>setMenu("home")} className={menu==="home"?"active":""}><Link to='/'>Home</Link></li>
-        <li onClick={()=>setMenu("menu")} className={menu==="menu"?"active":""}><Link to='/'>Menu</Link></li>
-        <li onClick={()=>setMenu("mobile-app")} className={menu==="mobile-app"?"active":""}><Link to='/'>Mobile-App</Link></li>
-        <li onClick={()=>setMenu("contact")} className={menu==="contact"?"active":""}><Link to='/'>Contact</Link></li>
+        <li onClick={()=>setMenu("home")} className={menu==="home"?"active":""}>Home</li>
+        <li onClick={()=>setMenu("menu")} className={menu==="menu"?"active":""}>Menu</li>
+        <li onClick={()=>setMenu("mobile-app")} className={menu==="mobile-app"?"active":""}>Mobile-App</li>
+        <li onClick={()=>setMenu("contact")} className={menu==="contact"?"active":""}>Contact</li>
       </ul>
       <div className="navbar-right">
         <img src={assets.search_icon} alt="" />
@@ -23,6 +23,7 @@ const Navbar = () => {
             <Link to='/cart'><img src={assets.basket_icon} alt="" /></Link>
             <div className={getTotalCartAmount()===0?"":"dot"}></div>
         </div>
+        <button onClick={()=>setShowLogin(true)}>Sign in</button>
       </div>
     </div>
   )
