@@ -7,6 +7,8 @@ import { fileURLToPath } from "url";
 import { connectDB } from "./config/db.js";
 import foodRouter from "./routes/foodRoute.js";
 import userRouter from "./routes/userRoute.js";
+import cartRouter from "./routes/cartRouter.js";
+
 
 dotenv.config();
 
@@ -42,7 +44,8 @@ connectDB();
 
 // API endpoints
 app.use("/api/food", foodRouter);
-app.use("/api/user",userRouter)
+app.use("/api/user",userRouter);
+app.use("/api/cart",cartRouter);
 
 // ✅ Serve images from uploads folder
 app.use("/images", express.static(path.join(__dirname, "uploads")));

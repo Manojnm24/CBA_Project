@@ -92,7 +92,7 @@ export const menu_list = [
         menu_image: menu_2
     },
     {
-        menu_name: "Deserts",
+        menu_name: "Desserts",
         menu_image: menu_3
     },
     {
@@ -180,28 +180,28 @@ export const food_list = [
         image: food_9,
         price: 150,
         description: "Smooth, creamy Italian gelato for a rich and indulgent treat.",
-        category: "Deserts"
+        category: "Desserts"
     }, {
         _id: "10",
         name: "Classic Sorbet",
         image: food_10,
         price: 170,
         description: "Light, fruity, and refreshingly cool – the perfect palate cleanser.",
-        category: "Deserts"
+        category: "Desserts"
     }, {
         _id: "11",
         name: "Churros",
         image: food_11,
         price: 130,
         description: "Golden-fried dough sticks coated in cinnamon sugar, served with chocolate dip.",
-        category: "Deserts"
+        category: "Desserts"
     }, {
         _id: "12",
         name: "Gulab Jamun",
         image: food_12,
         price: 100,
         description: "Soft, syrup-soaked dumplings that melt in your mouth with every bite.",
-        category: "Deserts"
+        category: "Desserts"
     },
     {
         _id: "13",
