@@ -18,7 +18,7 @@ const addToCart = async (req, res) => {
 
     await userModel.findByIdAndUpdate(
       req.body.userId,
-      { cartData },   // ✅ must use cart, not cartData
+      { cartData },   
       { new: true }
     );
 
@@ -42,7 +42,7 @@ const removeFromCart = async (req, res) => {
     if (cartData[req.body.itemId] > 0) {
       cartData[req.body.itemId] -= 1;
       if (cartData[req.body.itemId] === 0) {
-        delete cartData[req.body.itemId]; // optional cleanup
+        delete cartData[req.body.itemId]; 
       }
     }
 
