@@ -67,29 +67,42 @@
     min-height: 10px;
     background-color: tomato;
     border-radius: 5px;
-    top: -10px;
-    right: -10px;
+    top: -8px;
+    right: -8px;
 }
-@media (max-width: 1050px) {
-    .navbar .logo {
-        width: 140px;
-    }
-    .navbar-menu {
-        gap: 20px;
-        font-size: 17px;
-    }
-    .navbar-right {
-        gap: 30px;
-    }
-    .navbar-right img {
-        width: 22px;
-    }   
-    .navbar-right button {
-        padding: 8px 25px;
-        font-size: 15px;
-    }
+.navbar-profile {
+    position: relative;
+    display: inline-block; /* makes the profile act like a button */
 }
 
+.nav-profile-dropdown {
+    position: absolute;
+    top: 100%;       /* dropdown will appear just below the profile icon */
+    left: 50%;       /* start from center */
+    transform: translateX(-50%); /* align perfectly center */
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff2ef;
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: 1px solid tomato;
+    outline: 2px solid white;
+    list-style: none;
+    min-width: 120px; /* ensures dropdown has some width */
+    text-align: center;
+    z-index: 1;
+}
+
+.navbar-profile:hover .nav-profile-dropdown {
+    display: flex;
+}
+.nav-profile-dropdown li{
+display: flex;
+align-items: center;
+gap: 10px;
+cursor: pointer;
+}
 @media (max-width: 900px) {
     .navbar .logo {
         width: 120px;
@@ -114,5 +127,4 @@
         display: none;
     }
 }
-
 
