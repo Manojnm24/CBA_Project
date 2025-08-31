@@ -54,11 +54,11 @@ const Add = ({url}) => {
                 </label>
                 <input onChange={(e)=>setImage(e.target.files[0])} type="file" id="image" hidden required />
             </div>
-            <div className="add-product-name flex col">
+            <div className="add-product-name flex-col">
                 <p>Product Name</p>
                 <input onChange={onChangeHandler} value={data.name} type="text" name='name' placeholder='Type Here' required />
             </div>
-            <div className="add-product-description flex col">
+            <div className="add-product-description flex-col">
                 <p>Product Description</p>
                 <textarea onChange={onChangeHandler} value={data.description} name='description' rows="6" placeholder='Write Content Here' required />
             </div>

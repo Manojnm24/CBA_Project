@@ -6,12 +6,12 @@ import { StoreContext } from '../../context/StoreContext';
 
 const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("menu");
-  const { getTotalCartAmount, token, setToken } = useContext(StoreContext);
+  const { getTotalCartAmount, token, logout } = useContext(StoreContext);
   const navigate = useNavigate();
-  const logout = () => {
-    localStorage.removeItem("token");
-      setToken("");
-      navigate("/")
+  
+  const handleLogout = () => {
+    logout();
+    navigate("/");
   }
 
   return (
@@ -35,7 +35,7 @@ const Navbar = ({ setShowLogin }) => {
             <ul className="nav-profile-dropdown">
               <li><img src={assets.bag_icon} alt="" /> <p>Orders</p></li>
               <hr />
-              <li onClick={logout}><img src={assets.logout_icon} alt="" /><p>Logout</p></li>
+              <li onClick={handleLogout}><img src={assets.logout_icon} alt="" /><p>Logout</p></li>
             </ul>
           </div>
         }
