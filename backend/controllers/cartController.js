@@ -37,7 +37,7 @@ const removeFromCart = async (req, res) => {
       return res.json({ success: false, message: "User not found" });
     }
 
-    let cartData = userData.cart || {};
+    let cartData = userData.cartData || {};
 
     if (cartData[req.body.itemId] > 0) {
       cartData[req.body.itemId] -= 1;
@@ -48,7 +48,7 @@ const removeFromCart = async (req, res) => {
 
     await userModel.findByIdAndUpdate(
       req.body.userId,
-      { cart: cartData },
+      { cartData },
       { new: true }
     );
 
@@ -67,7 +67,7 @@ const getCart = async (req, res) => {
       return res.json({ success: false, message: "User not found" });
     }
 
-    let cartData = userData.cart || {};
+    let cartData = userData.cartData || {};
     res.json({ success: true, cartData });
   } catch (error) {
     console.log(error);
