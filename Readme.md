@@ -15,7 +15,7 @@ A full-stack food ordering app with a public storefront (browse menu, cart, chec
 ## 🛠️ Tech Stack
 **Frontend:** React, CSS, JavaScript  
 **Backend:** Node.js, Express  
-**Database:** MongoDB 
+**Database:** MongoDB <br>
 **Authentication:** Clerk  
 **Hosting:** Render (Backend), Vercel/Netlify (Frontend)
 
