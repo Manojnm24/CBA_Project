@@ -3,8 +3,11 @@ import './Navbar.css'
 import { assets } from '../../assets/assets.js'
 import { Link,useNavigate } from 'react-router-dom';
 import { StoreContext } from '../../context/StoreContext';
+import ThemeProvider, { useTheme } from "../../context/ThemeContext";
+
 
 const Navbar = ({ setShowLogin }) => {
+  const{theme, toggleTheme} = useTheme();
   const [menu, setMenu] = useState("menu");
   const { getTotalCartAmount, token, logout } = useContext(StoreContext);
   const navigate = useNavigate();
@@ -24,11 +27,16 @@ const Navbar = ({ setShowLogin }) => {
         <a href='#footer' onClick={() => setMenu("contact")} className={menu === "contact" ? "active" : ""}>Contact</a>
       </ul>
       <div className="navbar-right">
-        <img src={assets.search_icon} alt="" />
         <div className="navbar-search-icon">
           <Link to='/cart'><img src={assets.basket_icon} alt="" /></Link>
           <div className={getTotalCartAmount() === 0 ? "" : "dot"}></div>
         </div>
+
+        {/* 🌙 Theme Toggle Button */}
+  <button className="theme-toggle-btn" onClick={toggleTheme}>
+    {theme === "light" ? "🌙" : "☀️"}
+  </button>
+
         {!token ?<button onClick={() => setShowLogin(true)}>Sign in</button>
          :<div className='navbar-profile'>
             <img src={assets.profile_icon} alt="" />

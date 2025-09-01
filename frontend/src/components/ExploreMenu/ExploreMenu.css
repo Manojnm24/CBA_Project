@@ -54,6 +54,15 @@
     border: 4px solid tomato;
     padding: 2px;
 }
+
+.dark-theme .explore-menu-text {
+    color: #bbbbbb; 
+}
+
+.dark-theme .explore-menu-list-item p {
+    color: #cccccc; 
+}
+
 @media (max-width: 1050px) {
     .explore-menu-text{
         max-width: 100%;

@@ -122,6 +122,20 @@ cursor: pointer;
         font-size: 15px;
     }
 }
+
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: transform 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.2);
+}
+
 @media (max-width: 750px) {
     .navbar-menu {
         display: none;

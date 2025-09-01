@@ -9,6 +9,9 @@
 
 body{
   min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
 }
 
 a{
@@ -29,3 +32,35 @@ a{
     opacity: 1;
   }
 }
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+.light-theme {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+.dark-theme {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+}
+
+body.light-theme h1 {
+  color: #000000;
+}
+
+body.dark-theme h1 {
+  color: #ffffff;
+}
+
+.navbar-search-icon {
+  filter: none;
+}
+
+.dark-theme .navbar-search-icon {
+  filter: invert(1) brightness(2) drop-shadow(0 0 5px white);
+}
+
