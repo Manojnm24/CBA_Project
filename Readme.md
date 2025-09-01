@@ -47,7 +47,7 @@ A full-stack food ordering app with a public storefront (browse menu, cart, chec
 
 ---
 
-##Screenshots##
+## Screenshots
 
 <img width="1920" height="1200" alt="Screenshot (67)" src="https://github.com/user-attachments/assets/5308f606-14ec-415d-9001-a2ee8a6640d0" />
 <img width="1920" height="1200" alt="Screenshot (70)" src="https://github.com/user-attachments/assets/4e62efd8-236e-4606-afdc-9283852909c1" />
