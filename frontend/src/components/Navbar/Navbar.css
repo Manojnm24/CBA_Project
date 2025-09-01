@@ -136,6 +136,22 @@ cursor: pointer;
   transform: scale(1.2);
 }
 
+.nav-profile-dropdown.dark {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+}
+
+.nav-profile-dropdown.dark li {
+  color: #ddd;
+}
+
+.nav-profile-dropdown.dark li:hover {
+  background-color: #2b2b2b;
+  color: #4caf50;
+}
+
+
 @media (max-width: 750px) {
     .navbar-menu {
         display: none;
