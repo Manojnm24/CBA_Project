@@ -33,6 +33,25 @@
 .place-order .cart-total button{
     margin-top: 30px;
 }
+
+.dark-theme .place-order-left .title {
+  color: white;
+}
+
+.dark-theme .place-order-left input {
+  background-color: #333;
+  border: 1px solid #555;
+  color: white;
+}
+
+.dark-theme .place-order-left input::placeholder {
+  color: #aaaaaa;
+}
+
+.dark-theme .cart-total {
+  color: white;
+}
+
 @media (max-width:800px) {
     .place-order{
         flex-direction: column;

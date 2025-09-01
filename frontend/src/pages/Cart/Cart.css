@@ -80,6 +80,35 @@
         color: white;
         border-radius: 4px;
     }
+
+    .dark-theme .cart-items-title {
+  color: #bbbbbb;
+}
+
+.dark-theme .cart-items-item {
+  color: white;
+}
+
+.dark-theme .cart hr {
+  background-color: #444;
+}
+
+.dark-theme .cart-total-details {
+  color: #bbbbbb;
+}
+
+.dark-theme .cart-promocode p {
+  color: #bbbbbb;
+}
+
+.dark-theme .cart-promocode-input {
+  background-color: #333;
+}
+
+.dark-theme .cart-promocode-input input {
+  color: white;
+}
+
     @media (max-width: 750px) {
         .cart-bottom{
             flex-direction: column-reverse;
