@@ -1,4 +1,4 @@
-***🍴Food Delivery System***
+***🍴Food Delivery System***<br>
 A full-stack food ordering app with a public storefront (browse menu, cart, checkout UX) and an **Admin Panel** (add/list/remove items). Built with **React (Vite)**, **Node.js/Express**, and **MongoDB (Mongoose)**. Includes **JWT auth**, **cart APIs**, **image upload via Multer**, **dark/light theme toggle**, and **Toast** notifications.
 
 ---
